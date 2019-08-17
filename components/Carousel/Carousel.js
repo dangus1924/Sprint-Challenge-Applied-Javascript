@@ -33,8 +33,17 @@ function carouselCreator() {
   carouselRightDiv.classList.add('right-button')
   carouselRightDiv.textContent = '>'
 
+  // img src
+  
+
+
   //append
-  carousel.appendChild()
+  carousel.appendChild(carouselLeftDiv)
+  carousel.appendChild(carouselRightDiv)
+  carousel.appendChild(mountainIMG)
+  carousel.appendChild(computerIMG)
+  carousel.appendChild(treeIMG)
+  carousel.appendChild(turntableIMG)
 
   return carousel
 }
