@@ -21,10 +21,20 @@
 function carouselCreator() {
   const carousel = document.createElement('div')
   const carouselLeftDiv = document.createElement('left-button')
+  const carouselRightDiv = document.createElement('right-button')
   const mountainIMG = document.createElement('img')
   const computerIMG = document.createElement('img')
   const treeIMG = document.createElement('img')
   const turntableIMG = document.createElement('img')
 
-  
+  //class list
+  carouselLeftDiv.classList.add('left-button')
+  carouselLeftDiv.textContent = '<'
+  carouselRightDiv.classList.add('right-button')
+  carouselRightDiv.textContent = '>'
+
+  //append
+  carousel.appendChild()
+
+  return carousel
 }
