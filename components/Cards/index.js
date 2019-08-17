@@ -28,19 +28,29 @@ axios.get('https://lambda-times-backend.herokuapp.com/articles')
     res.data.articles.jquery.forEach(article => cardCreator(article))
     res.data.articles.node.forEach(article => cardCreator(article))
     res.data.articles.technology.forEach(article => cardCreator(article))
-})
+});
+
 const cardCreator = (obj) => {
-    const cardContainer = document.createElement('div')
-    const headlineDiv = document.createElement('div')
-    const authorDiv = document.createElement('div')
-    const imgDiv = document.createElement('div')
-    const imgDivIMG = document.createElement('img')
-    const authorSpan = document.createElement('span')
+    const cardContainer = document.createElement('div');
+    const headlineDiv = document.createElement('div');
+    const authorDiv = document.createElement('div');
+    const imgDiv = document.createElement('div');
+    const imgDivIMG = document.createElement('img');
+    const authorSpan = document.createElement('span');
 
     //class list
-    cardContainer.classList.add('card')
+    cardContainer.classList.add('card');
     headlineDiv.classList.add('headline');
-    authorDiv.classList.add('author')
-    imgDiv.classList.add('img-container')
+    authorDiv.classList.add('author');
+    imgDiv.classList.add('img-container');
+    
+
+    headlineDiv.textContent = obj.headline;
+    imgDivIMG.src = obj.authorPhoto;
+    authorSpan.textContent = `By ${obj.authorName}`;
+
+    
+
+     cardsContainer.appendChild(cardContainer);
     
 }
