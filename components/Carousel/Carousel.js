@@ -17,6 +17,8 @@
     <div class="right-button"> > </div>
   </div>
 */
+const carouselConatainer = document.querySelector('.carousel-container')
+carouselConatainer.appendChild(carouselCreator())
 
 function carouselCreator() {
   const carousel = document.createElement('div')
@@ -34,7 +36,10 @@ function carouselCreator() {
   carouselRightDiv.textContent = '>'
 
   // img src
-  
+  mountainIMG.src = './assests/carousel/mountains.jpeg'
+  computerIMG.src = './assests/carousel/computer.jpeg'
+  treeIMG.src = './assests/carousel/tree.jpeg'
+  turntableIMG.src = './assests/carousel/turntable.jpeg'
 
 
   //append
