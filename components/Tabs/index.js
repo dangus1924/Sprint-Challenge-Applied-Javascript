@@ -18,4 +18,11 @@ const tabCreator = (obj) => {
     const tabContainer = document.createElement('div')
     const topics = document.querySelector('.topics')
     const tabs = document.querySelector('.tabs')
+
+    // class list
+    abContainer.classList.add('tab');
+
+    //append
+
+    
 }
