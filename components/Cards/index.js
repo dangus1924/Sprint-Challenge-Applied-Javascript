@@ -45,11 +45,16 @@ const cardCreator = (obj) => {
     imgDiv.classList.add('img-container');
     
 
-    headlineDiv.textContent = obj.headline;
+    headlineDiv.textContent = obj.headline;        
     imgDivIMG.src = obj.authorPhoto;
     authorSpan.textContent = `By ${obj.authorName}`;
 
-    
+    //append
+    cardContainer.appendChild(headlineDiv);
+    cardContainer.appendChild(authorDiv);
+    authorDiv.appendChild(imgDiv);
+    imgDiv.appendChild(imgDivIMG);
+    authorDiv.appendChild(authorSpan);
 
      cardsContainer.appendChild(cardContainer);
     
