@@ -13,3 +13,9 @@ axios.get('https://lambda-times-backend.herokuapp.com/topics')
     console.log(res.data)
     res.data,topics.forEach(topic => tabCreator(topic))
 })
+
+const tabCreator = (obj) => {
+    const tabContainer = document.createElement('div')
+    const topics = document.querySelector('.topics')
+    const tabs = document.querySelector('.tabs')
+}
